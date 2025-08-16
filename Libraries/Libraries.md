@@ -7,7 +7,7 @@ Libraries that I worked with
 | Bootstrap                        | No                     | No              |                                                                       |
 | Nodemon Server                   | No                     | No              |                                                                       |
 | ClosedXML                        | No                     | No              |                                                                       |
-| ZXING QR Scanner (JavaScript)    | [Angular ngx scanner project](https://github.com/sathishsekarss/angular-ngxScanner)                     | No              |                                                                       |
+| ZXING QR Scanner (JavaScript)    | Yes                     | [Angular ngx scanner project](https://github.com/sathishsekarss/angular-ngxScanner)               |                                                                       |
 | PrimeNG                          | No                     | No              |                                                                       |
 | PrimeFaces                       | No                     | No              |                                                                       |
 | RXJS                             | No                     | No              |                                                                       |
