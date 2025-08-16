@@ -20,4 +20,5 @@ Libraries that I worked with
 | OAuth                             | No                     | No              |                                                                       |
 | Futurae                          | No                     | No              |                                                                       |
 | Ngx-File Upload                  | No                     | No              | [ngx-file-upload](https://www.npmjs.com/package/@iplab/ngx-file-upload) |
-| Date-fns (Date-related Library)  | No                     | No              | [date-fns](https://www.npmjs.com/package/date-fns)                    |
+| Date-fns (Date-related Library) 
+**Note: For some reason, the latest version might fail to work.  But installing the stable version does the job.**  | No                     | No              | [date-fns](https://www.npmjs.com/package/date-fns)                    |
