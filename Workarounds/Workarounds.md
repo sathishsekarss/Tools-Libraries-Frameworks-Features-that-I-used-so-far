@@ -1,10 +1,18 @@
+# Workarounds and Fixes
+The below are some of the workarounds and fixes that I have implemented while working on various projects.  These solutions address common issues and challenges faced during development.  These does not cover all the issues faced but only the prominent ones that I could remember.
+
 **Table of contents**
 
-1. [Turning on and off Radio buttons - Web](#turning-on-and-off-radio-buttons---web)
-2. [Send HTML template body in Outlook mail through visual basic](#send-html-template-body-in-outlook-mail-through-visual-basic)
-3. [Date time functionality](#date-time-functionality)
-4. [Browser window focus issue](#browser-window-focus-issue)
-5. [Checkbox tree multiple nested checkbox](#checkbox-tree-multiple-nested-checkbox)
+🛠️ - Fixes
+💡 - Ideas
+
+1. [Turning on and off Radio buttons - Web 🛠️](#turning-on-and-off-radio-buttons---web)
+2. [Send HTML template body in Outlook mail through visual basic 🛠️](#send-html-template-body-in-outlook-mail-through-visual-basic)
+3. [Date time functionality 🛠️](#date-time-functionality)
+4. [Browser window focus issue 🛠️](#browser-window-focus-issue)
+5. [Checkbox tree multiple nested checkbox 🛠️](#checkbox-tree-multiple-nested-checkbox)
+6. [Chatbot 💡](#chatbot)
+7. [Selected filter counter](#selected-filter-counter)
 
 ## Turning on and off Radio buttons - Web
 By default the radio button is mandatory to select so meaning you cannot unselect once done. I’ve done a workaround that helps to turn on and off like a checkbox.  This was done with external library angular material.  It is also possible to do in plain html and javascript.  Please refer to the below image for the work around.
@@ -33,3 +41,11 @@ Key points to remember:
 
 Smart fixes done are:
 Handing checkbox event and click event separately to avoid event propagation issues.
+
+## Chatbot
+Implemented smart suggesion feature.  It sends the api request silently in the background while the user is typing.  Once the user stops typing for a few milliseconds, the latest request response is shown as suggestions.
+
+This smart suggestion was implemented for every page using the angular router.  Whenever the route changes, the chatbot component is re-initialized to ensure it works seamlessly across different pages.
+
+## Selected filter counter
+Implemented a selected filter counter that dynamically updates based on the number of active filters applied by the user.  This counter provides real-time feedback to users about how many filters are currently in effect, enhancing the user experience.  Implmeneted this feature using angular ngrx state management to efficiently track and update the count of selected filters across different components from the API request.
