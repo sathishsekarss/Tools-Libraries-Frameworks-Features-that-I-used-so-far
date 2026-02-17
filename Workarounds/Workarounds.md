@@ -14,6 +14,7 @@ The below are some of the workarounds and fixes that I have implemented while wo
 6. [Chatbot 💡](#chatbot)
 7. [Selected filter counter 💡](#selected-filter-counter)
 8. [Parsing multiple lines in textarea input when copied from excel 🛠️](#parsing-multiple-lines-in-textarea-input-when-copied-from-excel)
+9. [Spring batch application to process large volume of data separately 🛠️](#spring-batch-application-to-process-large-volume-of-data-separately)
 
 ## Turning on and off Radio buttons - Web
 By default the radio button is mandatory to select so meaning you cannot unselect once done. I’ve done a workaround that helps to turn on and off like a checkbox.  This was done with external library angular material.  It is also possible to do in plain html and javascript.  Please refer to the below image for the work around.
@@ -58,3 +59,6 @@ The regex used for splitting the input is:
 ```javascript
 const lines = input.split(/\r?\n/);
 ```
+
+## Spring batch application to process large volume of data separately
+When dealing with large volumes of data, processing it in a single batch can lead to performance issues.  To address this, I implemented a Spring Batch application that processes data in smaller chunks.  This allows for better resource management and improved performance. The application can be configured through Cron jobs to run at specific intervals, ensuring that data is processed efficiently without overwhelming the system.
