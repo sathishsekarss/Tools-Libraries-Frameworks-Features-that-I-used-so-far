@@ -15,6 +15,7 @@ The below are some of the workarounds and fixes that I have implemented while wo
 7. [Selected filter counter 💡](#selected-filter-counter)
 8. [Parsing multiple lines in textarea input when copied from excel 🛠️](#parsing-multiple-lines-in-textarea-input-when-copied-from-excel)
 9. [Spring batch application to process large volume of data separately 🛠️](#spring-batch-application-to-process-large-volume-of-data-separately)
+10. [ngx-infinite-scroll issue 🛠️](#ngx-infinite-scroll-issue)
 
 ## Turning on and off Radio buttons - Web
 By default the radio button is mandatory to select so meaning you cannot unselect once done. I’ve done a workaround that helps to turn on and off like a checkbox.  This was done with external library angular material.  It is also possible to do in plain html and javascript.  Please refer to the below image for the work around.
@@ -62,3 +63,6 @@ const lines = input.split(/\r?\n/);
 
 ## Spring batch application to process large volume of data separately
 When dealing with large volumes of data, processing it in a single batch can lead to performance issues.  To address this, I implemented a Spring Batch application that processes data in smaller chunks.  This allows for better resource management and improved performance. The application can be configured through Cron jobs to run at specific intervals, ensuring that data is processed efficiently without overwhelming the system.
+
+## ngx-infinite-scroll issue
+Implemented ngx-infinite-scroll in an Angular application to load more data as the user scrolls down.  By importing the InfiniteScrollModule and adding the necessary event handlers, I was able to fetch additional data when the user reaches the bottom of the page.  This enhances the user experience by providing a seamless way to access more content without needing to click on pagination links.  On reaching the bottom of the page, the onScroll() method is triggered, which can be used to make an API call to fetch more data and append it to the existing list with Page number and page size parameters passed to the API request.  This implementation allows for efficient data loading and improved performance, especially when dealing with large datasets.
