@@ -5,7 +5,6 @@ This document is a collection of best practices that I have learned and applied 
 2. [CSS Best Practices](#css-best-practices)
 
 
-
 ## Coding Standards
 - Follow consistent naming conventions for variables, functions, and classes.
 - Use meaningful and descriptive names that convey the purpose of the code.
