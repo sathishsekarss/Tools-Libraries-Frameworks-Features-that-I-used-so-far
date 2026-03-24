@@ -9,3 +9,4 @@
 | Vimium                            | Yes                     |
 | Lazy Git (Terminal Based)         | No                      |
 | VM Visual (for Monitoring Java Runtime Memory) | No              |
+| Git graph ( VS Code plugin)                            | No                     |
