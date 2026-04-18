@@ -25,3 +25,4 @@ Libraries that I worked with
 | ngx-infinite-scroll                          | No                     | No              |[npm repository link](https://www.npmjs.com/package/ngx-infinite-scroll)                                                                       |
 | Papaparser                  | No                     | No              |                                                                       |
 | loadash library                  | No                     | No              |                                                                       |
+| Apache poi library for xls, csv file operations                   | No                     | No              |                                                                       |
