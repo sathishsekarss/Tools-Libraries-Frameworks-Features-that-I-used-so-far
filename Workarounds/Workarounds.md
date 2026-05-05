@@ -17,6 +17,7 @@ The below are some of the workarounds and fixes that I have implemented while wo
 9. [Spring batch application to process large volume of data separately 🛠️](#spring-batch-application-to-process-large-volume-of-data-separately)
 10. [ngx-infinite-scroll issue 🛠️](#ngx-infinite-scroll-issue)
 10. [menu options should be visible on hovering over 🛠️]](#menu-options-to-be-visible-on-hovering-over)
+11. [popup menu using overlay in angular](#popup-menu-using-angular-overlay)
 
 ## Turning on and off Radio buttons - Web
 By default the radio button is mandatory to select so meaning you cannot unselect once done. I’ve done a workaround that helps to turn on and off like a checkbox.  This was done with external library angular material.  It is also possible to do in plain html and javascript.  Please refer to the below image for the work around.
@@ -70,3 +71,6 @@ Implemented ngx-infinite-scroll in an Angular application to load more data as t
 
 ## menu-options-to-be-visible-on-hovering-over
 When using angular material mat menu it is not possible to use the hover options for button to show the menu options.  Since angular uses overlay, it causes lot of issues.  The best work around I did is use plain html and CSS show the menu options when hovering over.
+
+## popup-menu-using-angular-overlay
+In angular, we can use overlay apis to show popup, it is helpfull in case if we don't want to take care of position of the popup manually in the css code.  It handles most of the logics related to positions inside the library itself.
