@@ -12,3 +12,4 @@ Frameworks that I worked with
 | GraphQL               | No                     | No              |
 | MySQL                 | No                     | No              |
 | MSSQL                 | No                     | No              |
+| Ansible automation tool                 | No                     | No              |
