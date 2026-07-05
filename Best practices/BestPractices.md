@@ -3,6 +3,7 @@ This document is a collection of best practices that I have learned and applied 
 **Table of contents**
 1. [Coding Standards](#coding-standards)
 2. [CSS Best Practices](#css-best-practices)
+3. [Storing passwords](#Storing-passwords)
 
 
 ## Coding Standards
@@ -17,3 +18,6 @@ This document is a collection of best practices that I have learned and applied 
 - Avoid using inline styles; instead, use external CSS files for better maintainability.
 - Use CSS preprocessors like SASS to organize and modularize your stylesheets.
 - Implement a responsive design to ensure your application looks good on all devices.
+
+## Stroing passwords
+It's always goods to store passwords in a separate config folder.  And do not name the password key as password itslef.  It might cause security vulnerability issues in the application.
