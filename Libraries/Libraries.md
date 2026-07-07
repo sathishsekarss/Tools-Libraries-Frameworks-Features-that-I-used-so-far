@@ -26,3 +26,4 @@ Libraries that I worked with
 | Papaparser                  | No                     | No              |                                                                       |
 | loadash library                  | No                     | No              |                                                                       |
 | Apache poi library for xls, csv file operations                   | No                     | No              |                                                                       |
+| ngxPermissionOnly library for angular                   | No                     | No              |                                                                       |
