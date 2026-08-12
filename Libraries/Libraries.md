@@ -27,4 +27,4 @@ Libraries that I worked with
 | loadash library                  | No                     | No              |                                                                       |
 | Apache poi library for xls, csv file operations                   | No                     | No              |                                                                       |
 | ngxPermissionOnly library for angular                   | No                     | No              |                                                                       |
-| TinyMCE ( text editor library)                   | No                     | No              |                                                                       |[TinyMCE](https://www.tiny.cloud/docs/tinymce/latest/)
+| TinyMCE ( text editor library)                   | No                     | No              |                                                                       [TinyMCE](https://www.tiny.cloud/docs/tinymce/latest/)
