@@ -18,6 +18,7 @@ The below are some of the workarounds and fixes that I have implemented while wo
 10. [ngx-infinite-scroll issue 🛠️](#ngx-infinite-scroll-issue)
 10. [menu options should be visible on hovering over 🛠️]](#menu-options-to-be-visible-on-hovering-over)
 11. [popup menu using overlay in angular](#popup-menu-using-angular-overlay)
+12. [Aspose XlSX to PDF conversion truncate issue🛠️ ](#aspose-pdf-truncate-issue)
 
 ## Turning on and off Radio buttons - Web
 By default the radio button is mandatory to select so meaning you cannot unselect once done. I’ve done a workaround that helps to turn on and off like a checkbox.  This was done with external library angular material.  It is also possible to do in plain html and javascript.  Please refer to the below image for the work around.
@@ -74,3 +75,8 @@ When using angular material mat menu it is not possible to use the hover options
 
 ## popup-menu-using-angular-overlay
 In angular, we can use overlay apis to show popup, it is helpfull in case if we don't want to take care of position of the popup manually in the css code.  It handles most of the logics related to positions inside the library itself.
+
+## aspose-pdf-truncate-issue
+If the cells in the XLSX or XLS file have lengthy content and is used text wrap property, while printing XLSX or XLS file in the pdf, bottom rows where getting truncated or hidden from the pdf.
+To solve this issue, we sheet.setTextWrap property to true and manually checked, each cell in the excel for the length.
+I used to AI to solve this issue. The solution I worked on is from Aspose java library.
