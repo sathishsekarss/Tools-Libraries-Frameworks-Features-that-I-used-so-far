@@ -7,18 +7,19 @@ The below are some of the workarounds and fixes that I have implemented while wo
 💡 - Ideas
 
 1. [Turning on and off Radio buttons - Web 🛠️](#turning-on-and-off-radio-buttons---web)
-2. [Send HTML template body in Outlook mail through visual basic 🛠️](#send-html-template-body-in-outlook-mail-through-visual-basic)
-3. [Date time functionality 🛠️](#date-time-functionality)
-4. [Browser window focus issue 🛠️](#browser-window-focus-issue)
-5. [Checkbox tree multiple nested checkbox 🛠️](#checkbox-tree-multiple-nested-checkbox)
-6. [Chatbot 💡](#chatbot)
-7. [Selected filter counter 💡](#selected-filter-counter)
-8. [Parsing multiple lines in textarea input when copied from excel 🛠️](#parsing-multiple-lines-in-textarea-input-when-copied-from-excel)
-9. [Spring batch application to process large volume of data separately 🛠️](#spring-batch-application-to-process-large-volume-of-data-separately)
-10. [ngx-infinite-scroll issue 🛠️](#ngx-infinite-scroll-issue)
-10. [menu options should be visible on hovering over 🛠️]](#menu-options-to-be-visible-on-hovering-over)
-11. [popup menu using overlay in angular](#popup-menu-using-angular-overlay)
-12. [Aspose XlSX to PDF conversion truncate issue🛠️ ](#aspose-pdf-truncate-issue)
+1. [Send HTML template body in Outlook mail through visual basic 🛠️](#send-html-template-body-in-outlook-mail-through-visual-basic)
+1. [Date time functionality 🛠️](#date-time-functionality)
+1. [Browser window focus issue 🛠️](#browser-window-focus-issue)
+1. [Checkbox tree multiple nested checkbox 🛠️](#checkbox-tree-multiple-nested-checkbox)
+1. [Chatbot 💡](#chatbot)
+1. [Selected filter counter 💡](#selected-filter-counter)
+1. [Parsing multiple lines in textarea input when copied from excel 🛠️](#parsing-multiple-lines-in-textarea-input-when-copied-from-excel)
+1. [Spring batch application to process large volume of data separately 🛠️](#spring-batch-application-to-process-large-volume-of-data-separately)
+1. [ngx-infinite-scroll issue 🛠️](#ngx-infinite-scroll-issue)
+1. [menu options should be visible on hovering over 🛠️]](#menu-options-to-be-visible-on-hovering-over)
+1. [popup menu using overlay in angular](#popup-menu-using-angular-overlay)
+1. [Aspose XlSX to PDF conversion truncate issue🛠️ ](#aspose-pdf-truncate-issue)
+1. [Aspose XlSX - Make the XLSX file as readonly after downloading the content🛠️ ](#aspose-xlsx-read-only)
 
 ## Turning on and off Radio buttons - Web
 By default the radio button is mandatory to select so meaning you cannot unselect once done. I’ve done a workaround that helps to turn on and off like a checkbox.  This was done with external library angular material.  It is also possible to do in plain html and javascript.  Please refer to the below image for the work around.
@@ -80,3 +81,26 @@ In angular, we can use overlay apis to show popup, it is helpfull in case if we 
 If the cells in the XLSX or XLS file have lengthy content and is used text wrap property, while printing XLSX or XLS file in the pdf, bottom rows where getting truncated or hidden from the pdf.
 To solve this issue, we sheet.setTextWrap property to true and manually checked, each cell in the excel for the length.
 I used to AI to solve this issue. The solution I worked on is from Aspose java library.
+
+## aspose-xlsx-read-only
+To Make the cells as not editable, I used this work around.  It is by making the cells as non editable.  Only the user with password can edit the contents of the cell.
+
+eg: code
+```
+Workbook workbook = new Workbook("input.xlsx");
+Worksheet worksheet = workbook.getWorksheets().get(0);
+
+// Lock all cells, then protect the sheet
+Style style = workbook.createStyle();
+style.setLocked(true);
+StyleFlag flag = new StyleFlag();
+flag.setLocked(true); // -> makes the cell as not editable
+worksheet.getCells().applyStyle(style, flag);
+
+worksheet.protect(ProtectionType.ALL);
+worksheet.getProtection().setPassword("sheetPassword");
+
+workbook.protect(ProtectionType.ALL); // -> this is important as it doesn't allow the user to do any modifications
+workbook.getSettings().setPassword("workbookPassword");
+
+workbook.save("output.xlsx");```
