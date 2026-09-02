@@ -28,3 +28,4 @@ Libraries that I worked with
 | Apache poi library for xls, csv file operations                   | No                     | No              |                                                                       |
 | ngxPermissionOnly library for angular                   | No                     | No              |                                                                       |
 | TinyMCE ( text editor library)                   | No                     | No              |                                                                       [TinyMCE](https://www.tiny.cloud/docs/tinymce/latest/)
+| Aspose library for Mail                   | No                     | No              |                                                                       |
