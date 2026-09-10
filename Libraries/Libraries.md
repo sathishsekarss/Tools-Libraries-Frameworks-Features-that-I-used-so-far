@@ -29,3 +29,4 @@ Libraries that I worked with
 | ngxPermissionOnly library for angular                   | No                     | No              |                                                                       |
 | TinyMCE ( text editor library)                   | No                     | No              |                                                                       [TinyMCE](https://www.tiny.cloud/docs/tinymce/latest/)
 | Aspose library for Mail                   | No                     | No              |                                                                       |
+| Thymeleaf library for Java templates                   | No                     | No              |                                                                       |
