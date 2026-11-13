@@ -10,3 +10,4 @@
 | Lazy Git (Terminal Based)         | No                      |
 | VM Visual (for Monitoring Java Runtime Memory) | No              |
 | Git graph ( VS Code plugin)                            | No                     |
+| SMTP4Devv                            | No                     |
